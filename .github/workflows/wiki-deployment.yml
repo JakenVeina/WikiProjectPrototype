@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout /wiki
+        uses: actions/checkout@master
       - name: Merge to .wiki
         uses: SwiftDocOrg/github-wiki-publish-action@1.0.0
         with:
