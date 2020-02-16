@@ -16,3 +16,5 @@ jobs:
         uses: SwiftDocOrg/github-wiki-publish-action@1.0.0
         with:
           path: wiki
+        env:
+          GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.WIKI_DEPLOYMENT_ACCESS_TOKEN }}
