@@ -1,9 +1,11 @@
 name: Wiki Deployment
 
 on:
-    push:
-      branches:
-        - master
+  push:
+    branches:
+      - master
+    paths:
+      - 'wiki/**'    
 
 jobs:
   sync-wiki-files:
